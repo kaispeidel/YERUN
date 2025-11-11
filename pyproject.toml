@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text_openrouter_project"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+  "httpx>=0.28.1",            # for async HTTP requests to OpenRouter
+  "ipykernel>=7.1",
+  "requests>=2.32",        # optional, synchronous HTTP requests
+  "nltk>=3.8",             # basic NLP
+  "spacy>=3.6",            # advanced NLP
+  "pandas>=2.1",           # data handling
+  "python-dotenv>=1.1",    # load API keys from .env
+  "tqdm>=4.67",            # progress bars
+]
+

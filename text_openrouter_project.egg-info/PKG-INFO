@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: text_openrouter_project
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: ipykernel>=7.1
+Requires-Dist: requests>=2.32
+Requires-Dist: nltk>=3.8
+Requires-Dist: spacy>=3.6
+Requires-Dist: pandas>=2.1
+Requires-Dist: python-dotenv>=1.1
+Requires-Dist: tqdm>=4.67
