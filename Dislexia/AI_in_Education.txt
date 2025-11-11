@@ -1,0 +1,347 @@
+Title: AI Will Reshape Education. Are We Building Tools We Can Trust? | Jim Chilton | TEDxSNHU
+
+[Applause]
+Who was your best
+professor? Not your favorite, your best,
+the person you learned something from
+that's still with you
+today. Maybe it was something about
+history that helped you understand the
+past or a science experiment that helped
+you understand how the world
+worked. And then imagine this morning
+you discovered that was
+wrong. This is the quiet risk that is
+happening across education
+today. And the reason why is that
+traditionally we had three tenants of
+education. The
+textbook, the teacher and the libraries.
+Textbooks were riddled with facts and
+information and academic review to
+ensure their accuracy. The teachers have
+dedicated their lives and their
+education to the very discipline on what
+they were teaching us. And then
+libraries were full of books and
+evidence and artifacts of our past.
+These were the core components to
+education. But the reality is students
+and learners today have shifted from
+those core tenants and over to
+technology in generative AI. And that's
+where a core part of their learning is
+happening
+today. And one of the challenges with
+generative AI is that there is no
+bibliography and there is no
+accountability.
+But it is confident. It is instant. It
+is different in the sense that you don't
+know what's accurate and what's not. And
+that's part of the challenge that I
+think we need to address. What does
+learning look like when knowledge is
+actually the question?
+I spent 25 years in technology and
+nearly a decade now at the intersection
+of education and technology and in that
+time I have witnessed
+firsthand what's happened in the
+transformation in the education
+industry. I've watched the shift from
+the traditional printed textbook over to
+digitalbased learning solutions.
+Traditional textbooks are built on
+accuracy and they have peer reviews,
+fact reviews. Even when they're being
+purchased, they get reviewed yet again.
+And when there is something discovered
+that may be wrong with a textbook,
+there's a process to get it corrected.
+And today with generative AI that
+doesn't
+exist. So you have access without
+accountability. And that's one of the
+core challenges that I think we need to
+address. So the big question becomes how
+do we
+ensure that there's accuracy beneath
+generative AI as it's used by students.
+I spoke at an event last
+year to 300 graduate students and their
+professors and I asked the 300 students
+how many of them had used generative AI
+in the last semester of their learning
+and they all raised their
+hands. I asked the professors how many
+of them had used generative AI in their
+syllabus and helping to teach these
+students. No one raised their
+hands. Felt bad because I felt like I
+had put the teachers on the spot in
+front of their students. So I talked to
+them afterwards and they said Jim of
+course we've
+used generative AI things like open AI
+chat GPT they they've used these
+products but like the difference is Jim
+I can't just use something and then
+bring it into the institution bring it
+into the classroom there's a process we
+have to go
+through so we find ourselves
+flatfooted knowing that the students are
+advancing very quickly with this
+technology and we indeed are
+Not. So the reality is students are
+racing ahead. And one might ask how did
+that happen? The reality is it happened
+because the technology was thrust upon
+us and the early adopters were students
+and
+learners. And those that created some of
+this technology did
+not think about their primary validating
+users would be learners and educators.
+So we validated that these tools are
+fabulous for society and we didn't
+include the institutions who are now
+felt left
+flatfooted. So it's a bit reminiscent of
+the gold
+rush. And when you think about the gold
+rush, it had amazing
+risk and amazing potential reward.
+And up till now, you may think that I'm
+not a huge fan of generative AI, and it
+couldn't be further from the truth.
+Matter of fact, I think this is the
+technology and innovation of a
+lifetime. And I think the potential of
+what you could do with this is profound,
+not just in education, but in all kinds
+of applications.
+And when you think about the potential
+reward in education, the idea of
+personalized learning, the idea of you
+being able to spend some time with a
+topic anytime, day or
+night, and being able to go into your
+native language, if English is your
+second language, you could be able to do
+that with this technology today.
+And then we know, research has shown us
+that if all of us had a one-on-one
+tutor, we could see a full grade
+improvement as a result of that. But
+it's never been scalable, never been
+affordable. With this technology, that
+is possible. The notion of having
+someone that's available to you all the
+time that could help you move ahead in
+your
+education. And then finally, the scale
+in global reach. More than a billion
+people have used these generative AI
+solutions, meaning it's available to
+everyone
+everywhere. But just like with the gold
+rush, there's a catch. In the race to
+introduce generative
+AI, including
+education, there was not a lot of
+forethought in how this would be
+delivered or introduced. it was simply
+there. All of a sudden, it was available
+to everyone. And so, we've seen this
+happen before with a revolutionary tool
+that was supposed
+to help us connect with each other and
+share
+information. And of course, that was
+social media. But the difference between
+social
+media and this is that social media is
+riddled
+with
+misinformation. It's everyone's opinions
+and ideas regardless of its fact base.
+And if you take that same principle and
+you apply it to this, then we are on a
+very slippery slope about where we could
+end up with this technology.
+And we know from those platforms that
+misinformation and conspiracies are far
+more interesting than facts. People
+share that immediately because they see
+the excitement and the enthusiasm about
+something that may be real versus that
+is
+real. But for generative AI is that this
+may not be optional like social media
+is. Once it's in the fabric of
+education, we won't be able to get it
+out.
+And genai doesn't know the truth. It
+knows the next best
+word. That's what it's trained to do is
+to understand the topic and the idea and
+creating what is the next best word that
+should
+follow. And experts predict that large
+language models will run out of data by
+2026, just a year from now.
+And the reality is they won't run out of
+data. They'll run out of free data. And
+then you start to wonder what happens as
+generative AI produces data and results.
+And what happens as you start to
+feed other generative AI as its data
+source. So take a small problem and now
+it's magnified and it's in the fabric of
+this technology. You can't get it out
+after that.
+This is a real problem that we need to
+be concerned about. And what happens
+when generative AI follows the path of
+social media where engagement is more
+important than
+accuracy, where you prioritize clicks
+over
+credibility. It could shape learning
+even though it's not true.
+So let's imagine a world just five years
+from now in 2030 and we've got two
+scenarios. The
+first is the free generative AI
+world funded by ad advertisers optimized
+for engagement over
+accuracy and the schools particularly
+those in
+need leverage the free solutions for all
+of their students.
+But we know that the solutions are full
+of unverified
+information and
+biased. The very engagement of the
+student student and their data becomes
+the
+payment that fuels the corporate
+profits. Scenario one. Scenario two is a
+curated generative AI world.
+One that is
+fact-based, that is as accurate as a
+textbook but available to
+everyone and it becomes a public
+good that every student has
+access. Both options are viable. You
+have to decide. We have to decide which
+one do we want.
+I want to share another story with
+you. I presented
+um at a meeting in Georgia with deans,
+provos, presidents, and tenur
+professors about generative
+AI. And one woman took the liberty of
+changing her name tag and writing the
+original
+AI equals academic integrity.
+And as I finished my talk, her and I
+spoke and she was very clear with me
+that my enthusiasm and excitement about
+generative AI for
+education was going to destroy academic
+integrity. And at the time I was really
+dismissive to her in
+hindsight. I don't think I believed her.
+And I think that my bias, whether it was
+my enthusiasm about generative AI and
+its potential or whether it was my
+personal technology bias, but the
+reality was over time her concerns were
+valid. She may be more right than I was.
+So if we do
+nothing, students won't know the
+difference because the tools behind them
+won't know the
+difference. So how do we shape AI and
+generative AI into a tool for both
+learning and knowledge?
+So let's talk about a way forward
+because there's nothing worse than a
+problem without a way
+forward. So let's start with agentic AI.
+It is all the rage. It is available. It
+is working today and it is reasonably
+easy to configure and set up. The notion
+of having expert agentic
+AI on specific disciplines, specific
+topics, it is something that can be done
+today and is being done for other
+things, not just in education, but it is
+a viable option for
+us. And then let's talk about cross-
+sector collaboration.
+The idea of getting the people that care
+and are concerned are involved in this
+ecosystem together for a conversation
+about what can we do about the very
+problems we're talking
+about with the goal of having fact-based
+learning not just on engagement and
+metrics and if you think about it we
+need to have some certification around
+generative AI and education
+We've seen this happen with the
+FDA. We've seen this with the Privacy
+Act in GDPR that protects our
+information across the
+internet. These things exist and in many
+cases everyone said that they couldn't
+yet they do. I think the opportunity is
+here for us to do that so that we could
+have an agnostic body that validates
+what is a safe, viable, and accurate
+generative AI solution for
+educators. And then finally, making sure
+that all of these
+things are peer-reviewed just like
+academic
+research. Again, this is possible. But
+the reality is we have to begin now.
+This is not something we can wait
+another decade to do something
+about. We need to begin right here,
+right
+now. Generative AI is it's not a
+teacher. It's not a textbook. It's a
+mirror. And whatever you put in front of
+it is what it reflects back. And so far
+what we've put in front of it hasn't
+been great for
+education. And I think that's a problem
+that is worth solving and a problem that
+is
+solvable because if we build that the
+way it is today, the very foundation of
+education I
+fear could be inaccurate for a very long
+time.
+And I think students today should trust
+the answers and the knowledge that
+they're gaining the same way that many
+of us did that had those core tenants of
+education I shared in the beginning. The
+teacher, the textbook, and the
+library. But if we don't
+act, generative
+AI in its different forms will just
+continue moving forward without us.
+So the future of education is being
+written right
+now. The only question that remains is
+who is holding the
+pen. I think it should be us and I think
+it should be
+fact-based. Thank you.
