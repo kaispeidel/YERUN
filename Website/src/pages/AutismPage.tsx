@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import '../styles/disability-page.css'
+import '../styles/disability-subpages.css'
 
 interface ProblematicText {
   text: string
@@ -26,7 +27,7 @@ export default function AutismPage() {
   const [showReport, setShowReport] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const [demoMode, setDemoMode] = useState(true)
+  const [, setDemoMode] = useState(true)
   const [generatingAnalysis, setGeneratingAnalysis] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
 

@@ -1,0 +1,430 @@
+/* ===================================================================
+   DISABILITY SUBPAGES - STRICT MATCH TO MAIN PAGE (App.css)
+   
+   Design System:
+   - Border radius: 32px (cards), 50px (buttons), 20px (inputs)
+   - Shadows: 0 15px 40px rgba(0,0,0,0.12) base, 0 20px 50px hover
+   - Borders: 3px solid rgba(255,255,255,0.6)
+   - Transitions: cubic-bezier(0.23, 1, 0.320, 1)
+   - Gradients: 135deg linear
+   - Typography: 2.2rem headers (800 weight), 1.05rem body (500 weight)
+   ================================================================= */
+
+/* =========================
+   COMMON STYLES ALL PAGES
+   ========================= */
+
+.dyslexia-page .input-section,
+.dyslexia-page .output-section,
+.autism-page .input-section,
+.autism-page .output-section,
+.sign-language-page .input-section,
+.sign-language-page .output-section {
+  background: white;
+  border-radius: 32px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.dyslexia-page .input-section:hover,
+.dyslexia-page .output-section:hover,
+.autism-page .input-section:hover,
+.autism-page .output-section:hover,
+.sign-language-page .input-section:hover,
+.sign-language-page .output-section:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   DYSLEXIA PAGE - RED THEME
+   ========================= */
+
+.dyslexia-page .generate-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.dyslexia-page .generate-button::before,
+.autism-page .generate-button::before,
+.sign-language-page .generate-button::before,
+.dyslexia-page .start-quiz-button::before,
+.autism-page .start-quiz-button::before,
+.sign-language-page .start-quiz-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.dyslexia-page .generate-button:hover:not(:disabled),
+.autism-page .generate-button:hover:not(:disabled),
+.sign-language-page .generate-button:hover:not(:disabled) {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.dyslexia-page .generate-button:hover:not(:disabled)::before,
+.autism-page .generate-button:hover:not(:disabled)::before,
+.sign-language-page .generate-button:hover:not(:disabled)::before,
+.dyslexia-page .start-quiz-button:hover::before,
+.autism-page .start-quiz-button:hover::before,
+.sign-language-page .start-quiz-button:hover::before {
+  left: 100%;
+}
+
+.dyslexia-page .text-input:focus {
+  border-color: #FF6B6B;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.15);
+}
+
+.dyslexia-page .start-quiz-button,
+.dyslexia-page .view-button {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.dyslexia-page .start-quiz-button:hover,
+.dyslexia-page .view-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 107, 107, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Modal buttons for dyslexia */
+.dyslexia-page .modal-content {
+  border-radius: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.dyslexia-page .nav-button {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.dyslexia-page .nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.dyslexia-page .nav-button:hover:not(:disabled) {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 107, 107, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.dyslexia-page .nav-button:hover:not(:disabled)::before {
+  left: 100%;
+}
+
+/* =========================
+   AUTISM PAGE - PURPLE THEME
+   ========================= */
+
+.autism-page .generate-button,
+.autism-page .start-quiz-button,
+.autism-page .view-button {
+  background: linear-gradient(135deg, #A78BFA 0%, #9D4EDD 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.autism-page .generate-button:hover:not(:disabled),
+.autism-page .start-quiz-button:hover,
+.autism-page .view-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(167, 139, 250, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.autism-page .text-input:focus {
+  border-color: #A78BFA;
+  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.15);
+}
+
+.autism-page .modal-content {
+  border-radius: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.autism-page .nav-button {
+  background: linear-gradient(135deg, #A78BFA 0%, #9D4EDD 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.autism-page .nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.autism-page .nav-button:hover:not(:disabled) {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(167, 139, 250, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.autism-page .nav-button:hover:not(:disabled)::before {
+  left: 100%;
+}
+
+/* =========================
+   SIGN LANGUAGE PAGE - GOLD THEME
+   ========================= */
+
+.sign-language-page .generate-button,
+.sign-language-page .start-quiz-button,
+.sign-language-page .view-button,
+.sign-language-page .ask-button {
+  background: linear-gradient(135deg, #FFD60A 0%, #FFC300 100%);
+  color: #1a1a1a;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(255, 214, 10, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.sign-language-page .generate-button:hover:not(:disabled),
+.sign-language-page .start-quiz-button:hover,
+.sign-language-page .view-button:hover,
+.sign-language-page .ask-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 214, 10, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.sign-language-page .text-input:focus,
+.sign-language-page .question-input:focus {
+  border-color: #FFD60A;
+  box-shadow: 0 0 0 4px rgba(255, 214, 10, 0.15);
+}
+
+.sign-language-page .modal-content {
+  border-radius: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.sign-language-page .nav-button {
+  background: linear-gradient(135deg, #FFD60A 0%, #FFC300 100%);
+  color: #1a1a1a;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(255, 214, 10, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.sign-language-page .nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.sign-language-page .nav-button:hover:not(:disabled) {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 214, 10, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.sign-language-page .nav-button:hover:not(:disabled)::before {
+  left: 100%;
+}
+
+/* Sign Language specific inputs */
+.sign-language-page .question-input {
+  border: 3px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 1.5rem;
+  font-size: 1.05rem;
+  font-family: 'Quicksand', 'Poppins', -apple-system, sans-serif;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  color: #1a1a1a;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.sign-language-page .video-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+/* =========================
+   SHARED TAGS/BADGES STYLE
+   ========================= */
+
+.dyslexia-page .tag,
+.autism-page .tag,
+.sign-language-page .tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.dyslexia-page .tag:hover,
+.autism-page .tag:hover,
+.sign-language-page .tag:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.08);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 1024px) {
+  .dyslexia-page .input-section,
+  .dyslexia-page .output-section,
+  .autism-page .input-section,
+  .autism-page .output-section,
+  .sign-language-page .input-section,
+  .sign-language-page .output-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dyslexia-page .input-section,
+  .dyslexia-page .output-section,
+  .autism-page .input-section,
+  .autism-page .output-section,
+  .sign-language-page .input-section,
+  .sign-language-page .output-section {
+    border-radius: 24px;
+    padding: 1.5rem;
+  }
+  
+  .dyslexia-page .generate-button,
+  .dyslexia-page .start-quiz-button,
+  .autism-page .generate-button,
+  .autism-page .start-quiz-button,
+  .sign-language-page .generate-button,
+  .sign-language-page .start-quiz-button,
+  .sign-language-page .ask-button {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dyslexia-page .input-section,
+  .dyslexia-page .output-section,
+  .autism-page .input-section,
+  .autism-page .output-section,
+  .sign-language-page .input-section,
+  .sign-language-page .output-section {
+    border-radius: 20px;
+    padding: 1.2rem;
+  }
+}

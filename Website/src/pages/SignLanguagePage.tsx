@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 import '../styles/disability-page.css'
+import '../styles/disability-subpages.css'
 import './SignLanguagePage.css'
 
 interface ChunkDebugWord {
