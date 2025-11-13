@@ -177,8 +177,6 @@
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
@@ -199,9 +197,10 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   resize: none;
   transition: all 0.3s;
-  color: #1a1a1a;
+  color: #c7c7c7;
   line-height: 1.6;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .text-input:focus {
@@ -242,7 +241,7 @@
 
 /* Output Section */
 .output-section {
-  background: white;
+  background: rgb(236, 236, 236);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
@@ -253,7 +252,7 @@
 
 .output-section h2 {
   font-size: 1.3rem;
-  color: #1a1a1a;
+  color: #3d3d3d;
   margin-bottom: 1rem;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -261,13 +260,13 @@
 
 .text-output {
   flex: 1;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #bababa;
   border-radius: 12px;
   padding: 1.5rem;
   overflow-y: auto;
-  background: #fafafa;
+  background: #c0bcbc;
   line-height: 1.8;
-  color: #333;
+  color: #3e3e3e;
 }
 
 .text-output p {
@@ -277,7 +276,7 @@
 }
 
 .text-output .placeholder {
-  color: #aaa;
+  color: #878686;
   font-style: italic;
 }
 
@@ -465,6 +464,8 @@
   border-left-color: #f97316;
 }
 
+
+
 .adhd-page .feature-card {
   border-left-color: #06b6d4;
 }
@@ -634,8 +635,7 @@
   }
 
   .layout-container {
-    gap: 1.5rem;
-    height: auto;
+    gap: 1.75rem;
   }
 }
 
@@ -654,7 +654,7 @@
 
   .layout-container {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.75rem;
     height: auto;
   }
 
@@ -713,7 +713,7 @@
   }
 
   .layout-container {
-    gap: 1rem;
+    gap: 1.75rem;
   }
 
   .page-header h1 {
@@ -1104,4 +1104,507 @@
 .start-quiz-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(76, 175, 80, 0.3);
+}
+
+
+
+/* Optional: output text color (if background is dark) */
+.adhd-optimized,
+.dyslexia-optimized {
+  color: #3e3e3e; /* near white */
+}
+/* ADHD PAGE THEME - FOCUS-FRIENDLY REDESIGN
+   -------------------------------------------------- */
+
+.adhd-page {
+  /* Soft, neutral background - reduces visual noise */
+  background: linear-gradient(135deg, #e8eef3 0%, #d4dce5 100%);
+  color: #2d3748;
+}
+
+/* Header bar for ADHD page */
+.page-header.adhd-header {
+  /* Calming blue-green gradient instead of vibrant multi-color */
+  background: linear-gradient(135deg, #7ba8c1 0%, #6b93a8 100%);
+  color: #1a2332;
+  box-shadow: 0 4px 12px rgba(107, 147, 168, 0.2);
+}
+
+.adhd-header .header-content h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.adhd-header .header-content p {
+  margin-top: 0.3rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* Back button over gradient header */
+.adhd-header .back-button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  color: #1a2332;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.adhd-header .back-button:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Main content wrapper for ADHD page */
+.adhd-content .layout-container {
+  gap: 1.75rem;
+}
+
+/* INPUT SECTION – ADHD STYLE */
+
+.adhd-page .input-section {
+  background: #f8fafb;
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid #c5d1db;
+  box-shadow: 0 2px 8px rgba(107, 147, 168, 0.12);
+}
+
+.adhd-page .input-section h2 {
+  /* Soft blue instead of bright yellow */
+  color: #5a7a92;
+  margin-bottom: 0.8rem;
+}
+
+/* Input textarea */
+.adhd-page .text-input {
+  flex: 1;
+  border: 2px solid #bcc9d4;
+  border-radius: 12px;
+  padding: 1.3rem;
+  font-size: 0.95rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  resize: vertical;
+  transition: all 0.25s ease;
+  color: #2d3748;
+  background: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.adhd-page .text-input::placeholder {
+  color: #8b9aab;
+}
+
+.adhd-page .text-input:focus {
+  outline: none;
+  /* Soft teal focus state instead of bright yellow */
+  border-color: #5fa5a8;
+  box-shadow: 0 0 0 3px rgba(95, 165, 168, 0.15);
+}
+
+/* Generate button */
+.adhd-page .generate-button {
+  padding: 0.9rem 1.8rem;
+  /* Calming blue-green instead of bright gradient */
+  background: linear-gradient(135deg, #6b93a8 0%, #5a8297 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: 100%;
+}
+
+.adhd-page .generate-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(107, 147, 168, 0.3);
+  background: linear-gradient(135deg, #7ba8c1 0%, #6b93a8 100%);
+}
+
+.adhd-page .generate-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* OUTPUT SECTION – ADHD STYLE */
+
+.adhd-page .output-section {
+  background: #f8fafb;
+  border-radius: 16px;
+  padding: 1.7rem;
+  box-shadow: 0 2px 8px rgba(107, 147, 168, 0.12);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c5d1db;
+}
+
+.adhd-page .output-section h2 {
+  font-size: 1.2rem;
+  /* Muted blue instead of bright blue */
+  color: #5a7a92;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Actual text container */
+.adhd-page .text-output {
+  flex: 1;
+  min-height: 260px;  /* prevents collapsing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #d4dce5;
+  border-radius: 12px;
+  padding: 1.3rem;
+  overflow-y: auto;
+  background: #ffffff;
+  line-height: 1.7;
+  color: #2d3748;
+}
+.loading-message {
+  text-align: center;
+  color: #5a7a92;
+  opacity: 0.9;
+}
+
+
+/* Placeholder text in output */
+.adhd-page .text-output .placeholder {
+  color: #8b9aab;
+}
+
+/* Section blocks inside ADHD content */
+.adhd-page .adhd-structured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.adhd-page .adhd-section h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  /* Soft teal instead of bright yellow */
+  color: #5a8297;
+}
+
+.adhd-page .adhd-section p,
+.adhd-page .adhd-section li {
+  font-size: 0.95rem;
+}
+
+/* Checklist styling */
+.adhd-page .checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.adhd-page .checklist li::before {
+  content: '☐ ';
+  /* Muted blue instead of bright indigo */
+  color: #7ba8c1;
+}
+
+/* Highlight important words/phrases */
+.adhd-highlight {
+  /* Very subtle sage green highlight instead of bright yellow */
+  background-color: rgba(166, 195, 179, 0.25);
+  padding: 0 0.15em;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Small gamification / focus streak */
+.adhd-page .focus-gamification {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  /* Soft sage green instead of bright teal */
+  background: rgba(166, 195, 179, 0.2);
+  border: 1px solid rgba(166, 195, 179, 0.4);
+  font-size: 0.9rem;
+  color: #3d5a4f;
+}
+
+.adhd-page .focus-gamification strong {
+  /* Muted blue accent instead of bright yellow */
+  color: #5a8297;
+}
+
+.adhd-page .progress-bar {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(197, 209, 219, 0.5);
+  overflow: hidden;
+}
+
+.adhd-page .progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  /* Gentle blue-green gradient instead of bright multi-color */
+  background: linear-gradient(90deg, #7ba8c1, #6b93a8, #5a8297);
+  transition: width 0.3s ease;
+}
+/* Enhanced ADHD Section Styling */
+/* Enhanced ADHD Section Styling */
+
+/* Add spacing between sections for better visual separation */
+.adhd-page .adhd-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(232, 238, 243, 0.3);
+  border-radius: 10px;
+  border-left: 3px solid #7ba8c1;
+}
+
+/* Section headers - clear and friendly */
+.adhd-page .adhd-section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  color: #5a8297;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* TL;DR section - most important */
+.adhd-page .tldr-section {
+  border-left-color: #5a8297;
+  background: rgba(123, 168, 193, 0.1);
+}
+
+.adhd-page .tldr-section h3 {
+  color: #4a7189;
+  font-weight: 700;
+}
+
+/* Overview section */
+.adhd-page .overview-section {
+  border-left-color: #6b93a8;
+}
+
+/* Key Points section */
+.adhd-page .keypoints-section {
+  border-left-color: #5fa5a8;
+}
+
+/* Details section - less prominent since it's optional */
+.adhd-page .details-section {
+  border-left-color: #bcc9d4;
+  background: rgba(188, 201, 212, 0.05);
+}
+
+.adhd-page .details-section h3 {
+  color: #6b7b8a;
+}
+
+.adhd-page .details-content p {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+.adhd-page .details-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Next Steps section - action-oriented */
+.adhd-page .nextsteps-section {
+  border-left-color: #7ba8c1;
+  background: rgba(123, 168, 193, 0.08);
+}
+
+.adhd-page .nextsteps-section h3 {
+  color: #5a8297;
+}
+
+/* Checklist section */
+.adhd-page .checklist-section {
+  border-left-color: #a6c3b3;
+}
+
+/* Time section */
+.adhd-page .time-section {
+  border-left-color: #8b9aab;
+}
+
+.adhd-page .time-estimate {
+  font-weight: 600;
+  color: #5a7a92;
+  font-size: 1rem;
+}
+
+/* Lists within sections */
+.adhd-page .adhd-section ul,
+.adhd-page .adhd-section ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.adhd-page .adhd-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.adhd-page .adhd-section li:last-child {
+  margin-bottom: 0;
+}
+
+/* Bold/highlighted text within content */
+.adhd-page .adhd-highlight {
+  background-color: rgba(166, 195, 179, 0.25);
+  padding: 0.1em 0.2em;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Checklist items - special styling */
+.adhd-page .checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.adhd-page .checklist li {
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+.adhd-page .checklist li::before {
+  content: '☐';
+  position: absolute;
+  left: 0;
+  color: #7ba8c1;
+  font-size: 1.2em;
+  line-height: 1.3;
+}
+
+/* Ordered lists in Next Steps */
+.adhd-page .nextsteps-section ol {
+  counter-reset: step-counter;
+  list-style: none;
+  padding-left: 0;
+}
+
+.adhd-page .nextsteps-section ol li {
+  counter-increment: step-counter;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.adhd-page .nextsteps-section ol li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #7ba8c1;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .adhd-page .adhd-section {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .adhd-page .adhd-section h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Reformatted Full Text Section */
+.adhd-page .fulltext-section {
+  border-left-color: #8b9aab;
+  background: rgba(232, 238, 243, 0.2);
+}
+
+.adhd-page .fulltext-section .section-description {
+  font-size: 0.9rem;
+  color: #6b7b8a;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(197, 209, 219, 0.5);
+}
+
+/* Container for all subsections */
+.adhd-page .reformatted-subsections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Individual subsection block */
+.adhd-page .text-subsection {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 3px solid #7ba8c1;
+  transition: all 0.2s ease;
+}
+
+.adhd-page .text-subsection:hover {
+  border-left-color: #5a8297;
+  box-shadow: 0 2px 8px rgba(107, 147, 168, 0.15);
+}
+
+/* Subsection heading */
+.adhd-page .text-subsection h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #5a8297;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+/* Subsection content */
+.adhd-page .text-subsection p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #2d3748;
+  margin: 0;
+}
+
+/* Highlighted keywords in subsections */
+.adhd-page .text-subsection .adhd-highlight {
+  background-color: rgba(123, 168, 193, 0.2);
+  padding: 0.1em 0.25em;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  color: #1a2332;
+}
+
+/* Alternating subtle background for easier scanning */
+.adhd-page .text-subsection:nth-child(even) {
+  background: rgba(248, 250, 251, 0.8);
+}
+
+/* Mobile responsiveness for subsections */
+@media (max-width: 768px) {
+  .adhd-page .text-subsection {
+    padding: 0.8rem;
+  }
+  
+  .adhd-page .text-subsection h4 {
+    font-size: 0.9rem;
+  }
+  
+  .adhd-page .text-subsection p {
+    font-size: 0.85rem;
+  }
 }

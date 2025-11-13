@@ -41,7 +41,6 @@ CORS(app)  # Enable CORS for frontend
 documents = {}
 
 API_BASE = "https://us-central1-sign-mt.cloudfunctions.net/spoken_text_to_signed_pose"
-OPENROUTER_API_KEY = os.environ.get('OPENROUTER_API_KEY', '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')
 
 MAX_WORDS_PER_CHUNK = 250
 VIDEO_MIME_TYPE = "video/webm"

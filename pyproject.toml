@@ -18,3 +18,10 @@ dependencies = [
   "tqdm>=4.67",            # progress bars
 ]
 
+[tool.uv.workspace]
+members = [
+    "Dislexia/my-frontend/Dislexia/my-frontend/backend",
+    "Dislexia/my-frontend/backend",
+    "Dislexia/my-frontend/Dislexia",
+]
+
