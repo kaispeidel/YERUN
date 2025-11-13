@@ -117,6 +117,10 @@ body {
   background: linear-gradient(135deg, #e3d1f0 0%, #d4b8e5 100%);
 }
 
+.card.gradient-purple {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+}
+
 /* Card Image Area */
 .card-emoji {
   font-size: 1rem;
@@ -217,6 +221,10 @@ body {
 
 .card.gradient-calm .card-link {
   background: rgba(120, 90, 140, 0.85);
+}
+
+.card.gradient-purple .card-link {
+  background: rgba(100, 70, 150, 0.85);
 }
 
 .card-link:hover {

@@ -3,6 +3,7 @@ import './App.css'
 import DyslexiaPage from './pages/DyslexiaPage'
 import ADHDPage from './pages/ADHDPage'
 import AutismPage from './pages/AutismPage'
+import SignLanguagePage from './pages/SignLanguagePage'
 
 function HomePage() {
   const tools = [
@@ -32,6 +33,15 @@ function HomePage() {
       emoji: '✨',
       color: 'gradient-calm',
       link: '/autism'
+    },
+    {
+      id: 'sign-language',
+      title: 'Sign Language Helper',
+      description: 'Learn and practice sign language with AI-powered Q&A and video demonstrations. Ask questions and see sign language in action.',
+      tags: ['COMMUNICATION', 'LEARNING', 'VIDEO'],
+      emoji: '🤟',
+      color: 'gradient-purple',
+      link: '/sign-language'
     }
   ]
 
@@ -83,6 +93,7 @@ function App() {
         <Route path="/dyslexia" element={<DyslexiaPage />} />
         <Route path="/adhd" element={<ADHDPage />} />
         <Route path="/autism" element={<AutismPage />} />
+        <Route path="/sign-language" element={<SignLanguagePage />} />
       </Routes>
     </Router>
   )
