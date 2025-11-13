@@ -389,11 +389,15 @@ export default function SignLanguagePage() {
     <div className="disability-page sign-language-page">
       <header className="page-header sign-language-header">
         <div className="header-content">
-          <Link to="/" className="back-button">
-            <span>←</span> Back
-          </Link>
-          <h1>🤟 Sign Language Helper</h1>
-          <p>Chat with your course documents and translate answers to sign language</p>
+          <div className="header-top">
+            <Link to="/" className="back-button">
+              <span>←</span> Back
+            </Link>
+            <div className="header-text">
+              <h1>🤟 Sign Language Helper</h1>
+              <p>Chat with your course documents and translate answers to sign language</p>
+            </div>
+          </div>
         </div>
       </header>
 

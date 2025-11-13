@@ -223,11 +223,15 @@ Simplified:
     <div className="disability-page autism-page">
       <header className="page-header autism-header">
         <div className="header-content">
-          <Link to="/" className="back-button">
-            <span>←</span> Back
-          </Link>
-          <h1>Autism Support</h1>
-          <p>Sensory-friendly caption assistant for better understanding</p>
+          <div className="header-top">
+            <Link to="/" className="back-button">
+              <span>←</span> Back
+            </Link>
+            <div className="header-text">
+              <h1>Autism Support</h1>
+              <p>Sensory-friendly caption assistant for better understanding</p>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -342,6 +346,7 @@ Simplified:
                   justifyContent: 'center'
                 }}>
                   <p style={{
+                    fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
                     fontSize: '1.2rem',
                     lineHeight: '1.8',
                     color: '#1a1a1a',

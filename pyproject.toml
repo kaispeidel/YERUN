@@ -36,3 +36,5 @@ members = [
     "Dislexia/my-frontend/Dislexia",
 ]
 
+[tool.setuptools]
+packages = []

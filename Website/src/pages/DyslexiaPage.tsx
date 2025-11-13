@@ -95,11 +95,15 @@ export default function DyslexiaPage() {
     <div className="disability-page dyslexia-page">
       <header className="page-header dyslexia-header">
         <div className="header-content">
-          <Link to="/" className="back-button">
-            <span>←</span> Back
-          </Link>
-          <h1>Dyslexia Support</h1>
-          <p>Reading and text processing assistance</p>
+          <div className="header-top">
+            <Link to="/" className="back-button">
+              <span>←</span> Back
+            </Link>
+            <div className="header-text">
+              <h1>Dyslexia Support</h1>
+              <p>Reading and text processing assistance</p>
+            </div>
+          </div>
           <p className="font-credit">
             Font by <a href="https://opendyslexic.org/" target="_blank" rel="noopener noreferrer">OpenDyslexic</a> — Thank you for making reading accessible
           </p>

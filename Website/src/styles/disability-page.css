@@ -45,15 +45,19 @@
 }
 
 .page-header {
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: none;
   position: relative;
-  overflow: hidden;
-  text-align: left;
+  overflow: visible;
+  text-align: center;
   flex-shrink: 0;
   height: auto;
-  min-height: 100px;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
 }
 
 .page-header::before {
@@ -63,37 +67,40 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+  background: none;
   pointer-events: none;
 }
 
 .page-header .header-content {
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 95%;
+  padding: 1rem 2.5rem;
+  border-radius: 16px;
+  background: inherit;
 }
 
 .page-header h1 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
   letter-spacing: -0.5px;
   line-height: 1.2;
 }
 
 .page-header p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   opacity: 0.9;
   font-weight: 400;
-  margin: 0.3rem 0;
+  margin: 0.2rem 0;
 }
 
 .page-header .font-credit {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   opacity: 0.8;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   font-weight: 300;
 }
 
@@ -111,33 +118,56 @@
 
 /* Header color variants with subtle gradient overlay */
 .dyslexia-header {
+  background: #f5f5f5;
+}
+
+.dyslexia-header .header-content {
   background: linear-gradient(135deg, #f5d8b8 0%, #ead4b0 50%, #e8c4a0 100%);
   color: #3a3a3a;
+  box-shadow: 0 8px 32px rgba(245, 216, 184, 0.2);
 }
 
 .dyslexia-header h1,
-.dyslexia-header p {
+.dyslexia-header p,
+.dyslexia-header .font-credit {
   color: #3a3a3a;
 }
 
 .adhd-header {
+  background: #f5f5f5;
+}
+
+.adhd-header .header-content {
   background: linear-gradient(135deg, #b8ddd1 0%, #b0d9cc 50%, #a5d4c4 100%);
   color: #2a2a2a;
+  box-shadow: 0 8px 32px rgba(184, 221, 209, 0.2);
 }
 
 .adhd-header h1,
-.adhd-header p {
+.adhd-header p,
+.adhd-header .font-credit {
   color: #2a2a2a;
 }
 
 .autism-header {
+  background: #f5f5f5;
+}
+
+.autism-header .header-content {
   background: linear-gradient(135deg, #e3d1f0 0%, #dcc8eb 50%, #d4b8e5 100%);
   color: #3a3a3a;
+  box-shadow: 0 8px 32px rgba(227, 209, 240, 0.2);
 }
 
 .autism-header h1,
-.autism-header p {
+.autism-header p,
+.autism-header .font-credit {
   color: #3a3a3a;
+}
+
+/* Autism Page Font Override */
+.autism-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Back Button */
@@ -152,9 +182,9 @@
   border-radius: 10px;
   font-weight: 500;
   transition: all 0.3s;
-  margin-bottom: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
 .back-button:hover {
@@ -164,6 +194,27 @@
 
 .back-button span {
   font-size: 1rem;
+}
+
+/* Header Top Row - Back button + text */
+.header-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-text {
+  flex: 1;
+  text-align: left;
+}
+
+.header-text h1 {
+  margin-bottom: 0.3rem;
+}
+
+.header-text p {
+  margin: 0.2rem 0;
 }
 
 /* Page Content */
@@ -785,13 +836,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   backdrop-filter: blur(4px);
   animation: fadeIn 0.3s ease-in-out;
+  padding: 2rem;
 }
 
 @keyframes fadeIn {
@@ -807,13 +859,14 @@
   background: white;
   border-radius: 24px;
   padding: 3rem;
-  max-width: 750px;
-  width: 90%;
+  max-width: 1200px;
+  width: 95%;
   max-height: 85vh;
   overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   position: relative;
   animation: slideUp 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  margin-top: 4rem;
 }
 
 @keyframes slideUp {
@@ -858,7 +911,6 @@
   color: #1a1a1a;
   margin-bottom: 0.8rem;
   font-weight: 700;
-  font-family: 'OpenDyslexic', sans-serif;
 }
 
 .welcome-intro {
@@ -869,9 +921,9 @@
 }
 
 .welcome-features {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -909,7 +961,6 @@
   color: #1a1a1a;
   margin: 0 0 0.3rem 0;
   font-weight: 600;
-  font-family: 'OpenDyslexic', sans-serif;
 }
 
 .feature p {
@@ -1012,6 +1063,7 @@
 .input-card {
   background: white;
   border-radius: 24px;
+  font-family: 'Courier New', Courier, monospace;
   padding: 3.5rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   display: flex;
@@ -1037,7 +1089,6 @@
   border-radius: 16px;
   padding: 1.75rem;
   font-size: 1.05rem;
-  font-family: 'OpenDyslexic', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   resize: vertical;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   color: #1a1a1a;
