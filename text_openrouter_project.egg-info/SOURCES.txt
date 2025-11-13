@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-text_openrouter_project.egg-info/PKG-INFO
-text_openrouter_project.egg-info/SOURCES.txt
-text_openrouter_project.egg-info/dependency_links.txt
-text_openrouter_project.egg-info/requires.txt
-text_openrouter_project.egg-info/top_level.txt
