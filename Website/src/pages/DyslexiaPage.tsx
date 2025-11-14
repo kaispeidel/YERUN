@@ -29,6 +29,42 @@ export default function DyslexiaPage() {
     }
   }, [])
 
+  const extractJsonArray = (text: string) => {
+    // Try to find JSON array in the text
+    const arrayStart = text.indexOf('[')
+    if (arrayStart === -1) return null
+    
+    let depth = 0
+    let inString = false
+    let escaped = false
+    
+    for (let i = arrayStart; i < text.length; i++) {
+      const char = text[i]
+      
+      if (escaped) {
+        escaped = false
+        continue
+      }
+      
+      if (char === '\\') {
+        escaped = true
+        continue
+      }
+      
+      if (char === '"') {
+        inString = !inString
+        continue
+      }
+      
+      if (!inString) {
+        if (char === '[') depth++
+        if (char === ']') depth--
+        if (depth === 0) return text.slice(arrayStart, i + 1)
+      }
+    }
+    return null
+  }
+
   const generateQuestions = async () => {
     if (!inputText.trim()) {
       setError('Please paste some text first')
@@ -44,8 +80,9 @@ export default function DyslexiaPage() {
 
       const prompt = (
         'Generate EXACTLY 5 multiple-choice questions (4 choices A-D) based ONLY on the source text. ' +
-        'Return only valid JSON array: ' +
-        '[{"question":"...","choices":["A ...","B ...","C ...","D ..."],"answer":"B","explanation":"..."}]' +
+        'CRITICAL: Return ONLY a valid JSON array, no other text or explanation. ' +
+        'Format: [{"question":"...","choices":["A ...","B ...","C ...","D ..."],"answer":"A","explanation":"..."}] ' +
+        'Ensure proper JSON formatting with correct quotes and commas. ' +
         `\n\nSource text:\n\n${textSnippet}`
       )
 
@@ -62,9 +99,12 @@ export default function DyslexiaPage() {
         },
         body: JSON.stringify({
           model: 'openai/gpt-3.5-turbo',
-          messages: [{ role: 'user', content: prompt }],
+          messages: [
+            { role: 'system', content: 'You are a strict JSON-only responder. Return only valid JSON arrays with no additional text.' },
+            { role: 'user', content: prompt }
+          ],
           temperature: 0.3,
-          max_tokens: 800,
+          max_tokens: 1200,
         }),
       })
 
@@ -78,7 +118,29 @@ export default function DyslexiaPage() {
 
       console.log('Raw API response:', content)
 
-      const parsedQuestions = JSON.parse(content) as Question[]
+      let parsedQuestions: Question[] = []
+      try {
+        // Try parsing directly first
+        parsedQuestions = JSON.parse(content) as Question[]
+      } catch (parseError) {
+        // If direct parsing fails, try to extract JSON array from the content
+        const jsonFragment = extractJsonArray(content)
+        if (!jsonFragment) {
+          throw new Error('API did not return valid JSON. Please try again.')
+        }
+        try {
+          parsedQuestions = JSON.parse(jsonFragment) as Question[]
+        } catch (secondParseError) {
+          console.error('JSON parsing error:', secondParseError)
+          console.error('Attempted to parse:', jsonFragment)
+          throw new Error('API returned invalid JSON format. Please try again.')
+        }
+      }
+
+      if (!Array.isArray(parsedQuestions) || parsedQuestions.length === 0) {
+        throw new Error('API did not return valid questions array.')
+      }
+
       setQuestions(parsedQuestions)
       setShowQuestionsModal(true)
       setCurrentQuestionIdx(0)
