@@ -4,10 +4,12 @@
 Repository for TEAM ALPHA's hackathon project. Contains source code, documentation, and assets for the solution developed during the event.
 
 ## Team
-- Alice Nguyen — Frontend, UX
-- Ben Carter — Backend, APIs
-- Kai Speidel — ML, Systems
-- Maria Rossi — Project lead, QA
+
+- Kai Speidel
+- Lucia Welther
+- Tùng Do
+- Spike Cullens
+
 
 ## Goals
 - Implement a minimal viable product demonstrating the core idea.

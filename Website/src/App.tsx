@@ -49,8 +49,13 @@ function HomePage() {
     <div className="app">
       <header className="header">
         <div className="header-content">
-          <h1 className="title">AccessHub</h1>
+          <h1 className="title">YERUN Hackathon team ALPHA disability helper</h1>
           <p className="subtitle">Empowering everyone with personalized tools</p>
+          <p className="github-link">
+            <a href="https://github.com/kaispeidel/YERUN" target="_blank" rel="noopener noreferrer">
+              https://github.com/kaispeidel/YERUN
+            </a>
+          </p>
         </div>
       </header>
 
