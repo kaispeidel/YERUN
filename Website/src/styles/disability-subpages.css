@@ -380,6 +380,324 @@
 }
 
 /* =========================
+   ADHD PAGE - BLUE/TEAL THEME
+   ========================= */
+
+.adhd-page .generate-button,
+.adhd-page .start-quiz-button,
+.adhd-page .view-button,
+.adhd-page .quiz-button,
+.adhd-page .view-full-document-button {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.adhd-page .generate-button:hover:not(:disabled),
+.adhd-page .start-quiz-button:hover,
+.adhd-page .view-button:hover,
+.adhd-page .quiz-button:hover,
+.adhd-page .view-full-document-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.adhd-page .text-input:focus {
+  border-color: #06B6D4;
+  box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15);
+}
+
+.adhd-page .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(6, 182, 212, 0.05);
+  border-radius: 20px;
+  border: 2px solid rgba(6, 182, 212, 0.2);
+}
+
+.adhd-page .meta-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.adhd-page .meta-item h4 {
+  color: #0891B2;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.adhd-page .meta-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adhd-page .meta-item li {
+  padding: 0.5rem 0;
+  color: #1f2937;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.adhd-page .time-estimate {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0891B2;
+  margin: 0;
+}
+
+.adhd-page .adhd-highlight {
+  color: #0891B2;
+  font-weight: 700;
+}
+
+.adhd-page .reformatted-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.adhd-page .reformatted-paragraph {
+  background: rgba(6, 182, 212, 0.08);
+  border-left: 5px solid #06B6D4;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.1);
+  transition: all 0.3s ease;
+}
+
+.adhd-page .reformatted-paragraph:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.2);
+}
+
+.adhd-page .reformatted-paragraph h4 {
+  color: #0891B2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.adhd-page .single-claim-sentence {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.adhd-page .meta-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.adhd-page .notes-button {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+}
+
+.adhd-page .notes-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.adhd-page .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.adhd-page .full-document-modal {
+  background: white;
+  border-radius: 32px;
+  border: 3px solid rgba(6, 182, 212, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.adhd-page .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid rgba(6, 182, 212, 0.2);
+  position: sticky;
+  top: 0;
+  background: white;
+  border-radius: 32px 32px 0 0;
+}
+
+.adhd-page .modal-header h2 {
+  color: #0891B2;
+  font-weight: 700;
+  margin: 0;
+}
+
+.adhd-page .modal-close-button {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.adhd-page .modal-close-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+}
+
+.adhd-page .modal-content {
+  padding: 2rem;
+}
+
+.adhd-page .document-subsection {
+  margin-bottom: 2.5rem;
+}
+
+.adhd-page .document-subsection h3 {
+  color: #0891B2;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+}
+
+.adhd-page .document-subsection p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.adhd-page .focus-gamification {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(8, 145, 178, 0.1) 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(6, 182, 212, 0.3);
+}
+
+.adhd-page .focus-gamification p {
+  color: #0891B2;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.adhd-page .progress-bar {
+  background: rgba(200, 200, 200, 0.3);
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(6, 182, 212, 0.3);
+}
+
+.adhd-page .progress-fill {
+  background: linear-gradient(90deg, #06B6D4 0%, #0891B2 100%);
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.adhd-page .details-content {
+  padding: 1rem;
+  background: rgba(6, 182, 212, 0.05);
+  border-left: 4px solid #06B6D4;
+  border-radius: 8px;
+}
+
+.adhd-page .details-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.adhd-page .extras-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.adhd-page .extras-column {
+  padding: 1.5rem;
+  background: rgba(6, 182, 212, 0.05);
+  border-radius: 16px;
+  border: 2px solid rgba(6, 182, 212, 0.2);
+}
+
+.adhd-page .extras-column h4 {
+  color: #0891B2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.adhd-page .extras-column ol,
+.adhd-page .extras-column ul {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.adhd-page .extras-column li {
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.adhd-page .checklist li:before {
+  content: '☐ ';
+  color: #0891B2;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* =========================
    RESPONSIVE DESIGN
    ========================= */
 

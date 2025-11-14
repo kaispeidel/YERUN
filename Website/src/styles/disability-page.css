@@ -2111,3 +2111,67 @@
     font-size: 0.9rem;
   }
 }
+
+
+// ...existing code...
+.adhd-structured-content .overview-meta {
+  display: block;
+  gap: 12px;
+}
+
+.adhd-structured-content .overview-meta .meta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.adhd-structured-content .overview-meta .meta-item {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 420px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ensure bold highlights wrap and are visible */
+.adhd-highlight {
+  background: rgba(255, 235, 59, 0.15);
+  padding: 0 3px;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+/* modal improvements */
+.full-document-modal {
+  position: fixed;
+  top: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1100px, 92%);
+  max-height: 88vh;
+  overflow: auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  z-index: 1200;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  z-index: 1100;
+  padding-top: 4vh;
+}
+
+/* ensure single-claim sentences are readable */
+.single-claim-sentence {
+  margin: 8px 0;
+  line-height: 1.45;
+}
+/* ...existing code... */
